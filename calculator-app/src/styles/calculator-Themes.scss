@@ -79,6 +79,15 @@
     height: 100px;
     border-radius: 6px;
     margin-top: .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .screen-text {
+        font-size: 44px;
+        margin-top: .4rem;
+        margin-right: 1rem;
+    }
 }
 
 //---CALCULATOR KEYPAD---
@@ -181,6 +190,10 @@
     //screen
     .calc-screen {
         background: hsl(224, 36%, 15%);
+
+        .screen-text {
+            color: hsl(0, 0%, 100%);
+        }
     }
 
     //keypad
@@ -248,6 +261,10 @@
     //screen
     .calc-screen {
         background: hsl(0, 0%, 93%);
+
+        .screen-text {
+            color: hsl(60, 10%, 19%);
+        }
     }
 
     //keypad
@@ -315,6 +332,10 @@
     //screen
     .calc-screen {
         background: hsl(268, 71%, 12%);
+
+        .screen-text {
+            color: hsl(52, 100%, 62%);
+        }
     }
 
     //keypad

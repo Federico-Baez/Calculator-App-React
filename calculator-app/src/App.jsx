@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import CalcContainter from './components/containers/calcContainter';
-import CalcHeader from './components/pure/calcHeader';
 
 //styles
 import './styles/calculator-Themes.scss';
@@ -9,9 +8,10 @@ import './styles/calculator-Themes.scss';
 function App() {
   const [theme, setTheme] = useState("theme-1");
 
+
   useEffect(() => {
     //check for the theme on local storage
-    const currentTheme = localStorage.getItem("theme");
+    const currentTheme = localStorage.getItem("prefers-color-scheme");
     //if found, set selected theme value in state
     if (currentTheme) {
       setTheme(currentTheme);
@@ -22,7 +22,7 @@ function App() {
   function handleThemeChange(event) {
     const themeValue = (event.target.value);
     setTheme(themeValue);
-    localStorage.setItem("theme", themeValue);
+    localStorage.setItem("prefers-color-scheme", themeValue);
   }
 
 
