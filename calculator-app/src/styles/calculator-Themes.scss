@@ -100,38 +100,55 @@
     .button-container {
         display: grid;
         gap: 1.2rem;
+
+        button {
+            border: none;
+
+            &:hover {
+                border: none;
+            }
+
+            &:active {
+                border: none;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .number {
+            font-size: 32px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1.5rem;
+        }
+
+        .row {
+            display: flex;
+            gap: 1.2rem;
+        }
+
+        .sm-btn {
+            width: 78px;
+            height: 46px;
+        }
+
+        .lg-btn {
+            width: 175px;
+            height: 46px;
+        }
+
+        .btn-spc {
+            font-size: 22px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 1.1rem;
+        }
     }
 
-    .number {
-        font-size: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 1.5rem;
-    }
-
-    .row {
-        display: flex;
-        gap: 1.2rem;
-    }
-
-    .sm-btn {
-        width: 78px;
-        height: 46px;
-    }
-
-    .lg-btn {
-        width: 175px;
-        height: 46px;
-    }
-
-    .btn-spc {
-        font-size: 22px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding-top: 1.1rem;
-    }
 }
 
 //---THEMES---
@@ -174,18 +191,30 @@
             background: hsl(30, 25%, 89%);
             color: hsl(221, 14%, 31%);
             box-shadow: 0px 3px hsl(28, 16%, 65%);
+
+            &:active {
+                background: hsl(0, 0%, 100%);
+            }
         }
 
         .btn-spc {
             background: hsl(225, 21%, 49%);
             color: hsl(0, 0%, 100%);
             box-shadow: 0px 3px hsl(224, 28%, 35%);
+
+            &:active {
+                background: hsl(224, 51%, 76%);
+            }
         }
 
         .btn-spc-eq {
             background: hsl(6, 63%, 50%);
             color: hsl(0, 0%, 100%);
             box-shadow: 0px 3px hsl(6, 70%, 34%);
+
+            &:active {
+                background: hsl(6, 93%, 67%);
+            }
         }
     }
 }
@@ -229,18 +258,30 @@
             background: hsl(45, 7%, 89%);
             color: hsl(60, 10%, 19%);
             box-shadow: 0px 3px hsl(35, 11%, 61%);
+
+            &:active {
+                background: hsl(0, 0%, 100%);
+            }
         }
 
         .btn-spc {
             background: hsl(185, 42%, 37%);
             color: hsl(0, 0%, 100%);
             box-shadow: 0px 3px hsl(185, 58%, 25%);
+
+            &:active {
+                background: hsl(185, 41%, 56%);
+            }
         }
 
         .btn-spc-eq {
             background: hsl(25, 98%, 40%);
             color: hsl(0, 0%, 100%);
             box-shadow: 0px 3px hsl(25, 99%, 27%);
+
+            &:active {
+                background: hsl(25, 100%, 61%);
+            }
         }
     }
 }
@@ -284,18 +325,30 @@
             background: hsl(268, 47%, 21%);
             color: hsl(52, 100%, 62%);
             box-shadow: 0px 3px hsl(290, 70%, 36%);
+
+            &:active {
+                background: hsl(268, 54%, 44%);
+            }
         }
 
         .btn-spc {
             background: hsl(281, 89%, 26%);
             color: hsl(0, 0%, 100%);
             box-shadow: 0px 3px hsl(285, 91%, 52%);
+
+            &:active {
+                background: hsl(280, 56%, 44%);
+            }
         }
 
         .btn-spc-eq {
             background: hsl(176, 100%, 44%);
             color: hsl(198, 20%, 13%);
             box-shadow: 0px 3px hsl(177, 92%, 70%);
+
+            &:active {
+                background: hsl(177, 100%, 79%);
+            }
         }
     }
 }
