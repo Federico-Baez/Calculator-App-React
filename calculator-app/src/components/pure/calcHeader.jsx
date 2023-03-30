@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 
 const CalcHeader = ({ handleThemeChange, themeValue }) => {
+    useEffect(() => {
+        console.log(themeValue);
+    }, []);
+
     return (
         <div className='header-container'>
             <h1 className='title'>calc</h1>

@@ -6,7 +6,7 @@ import CalcContainter from './components/containers/calcContainter';
 import './styles/calculator-Themes.scss';
 
 function App() {
-  const [theme, setTheme] = useState("theme-1");
+  const [theme, setTheme] = useState("1");
 
 
   useEffect(() => {

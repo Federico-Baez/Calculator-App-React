@@ -39,7 +39,7 @@ const CalcContainter = ({ handleThemeChange, theme }) => {
     const divide = (num1, num2) => {
         if (typeof num1 === "number" && typeof num2 === "number") {
             if (num2 != 0) {
-                return setScreenText(Math.round((num1 / num2) * 100) / 100);
+                return setScreenText(((num1 / num2) * 100) / 100);
             } else {
                 setScreenText("Math ERROR 1");
                 setErrorFlag(true);
