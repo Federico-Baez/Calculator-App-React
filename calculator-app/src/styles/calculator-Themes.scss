@@ -373,3 +373,56 @@
         }
     }
 }
+
+@media (max-width: 500px) {
+    .calc-container {
+        width: 300px;
+        height: 600px;
+        gap: 1rem;
+    }
+
+    .calc-screen {
+        width: 300px;
+        height: 80px;
+    }
+
+    .calc-keypad {
+        width: 300px;
+        height: 355px;
+
+        .button-container {
+            display: grid;
+            gap: .9rem;
+
+
+            .number {
+                font-size: 32px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                padding-top: .5rem;
+            }
+
+            .row {
+                display: flex;
+                gap: .9rem;
+            }
+
+            .sm-btn {
+                width: 54px;
+                height: 52px;
+            }
+
+            .lg-btn {
+                width: 124px;
+                height: 46px;
+            }
+
+            .btn-spc {
+                font-size: 20px;
+            }
+        }
+    }
+
+}
